@@ -30,4 +30,4 @@ PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := Android
 PRODUCT_NAME := aosp_blueline
 PRODUCT_DEVICE := blueline
-PRODUCT_MODEL := AOSP on blueline
+PRODUCT_MODEL := Pixel 3
