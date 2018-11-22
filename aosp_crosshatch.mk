@@ -33,7 +33,7 @@ PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := Android
 PRODUCT_NAME := aosp_crosshatch
 PRODUCT_DEVICE := crosshatch
-PRODUCT_MODEL := AOSP on crosshatch
+PRODUCT_MODEL := Pixel 3 XL
 
 # Audio XMLs
 PRODUCT_COPY_FILES += \
