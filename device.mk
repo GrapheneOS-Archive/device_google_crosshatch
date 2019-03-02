@@ -144,10 +144,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     bootctrl.sdm845
 
-# Script that copies preloads directory from system_other to data partition
-PRODUCT_COPY_FILES += \
-    device/google/crosshatch/preloads_copy.sh:system/bin/preloads_copy.sh
-
 AB_OTA_UPDATER := true
 
 AB_OTA_PARTITIONS += \
