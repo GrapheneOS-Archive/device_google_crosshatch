@@ -18,4 +18,11 @@ TARGET_BOOTLOADER_BOARD_NAME := crosshatch
 TARGET_SCREEN_DENSITY := 560
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 165
 
+# DTBO partition definitions
+BOARD_PREBUILT_DTBOIMAGE := device/google/crosshatch-kernel/dtbo.img
+BOARD_DTBOIMG_PARTITION_SIZE := 8388608
+
+# DTB
+BOARD_PREBUILT_DTBIMAGE_DIR := device/google/crosshatch-kernel
+
 include device/google/crosshatch/BoardConfig-common.mk
