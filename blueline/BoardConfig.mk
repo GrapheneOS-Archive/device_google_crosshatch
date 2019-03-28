@@ -18,4 +18,8 @@ TARGET_BOOTLOADER_BOARD_NAME := blueline
 TARGET_SCREEN_DENSITY := 440
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 20
 
+# DTBO partition definitions
+BOARD_PREBUILT_DTBOIMAGE := device/google/blueline-kernel/dtbo.img
+BOARD_DTBOIMG_PARTITION_SIZE := 8388608
+
 include device/google/crosshatch/BoardConfig-common.mk
