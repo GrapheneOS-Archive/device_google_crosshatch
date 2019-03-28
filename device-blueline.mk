@@ -51,3 +51,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Enable iorapd readahead for app starts
 PRODUCT_PRODUCT_PROPERTIES += \
     iorapd.readahead.enable=true
+
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+    LOCAL_KERNEL := device/google/blueline-kernel/Image.lz4
+else
+    LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_KERNEL):kernel
