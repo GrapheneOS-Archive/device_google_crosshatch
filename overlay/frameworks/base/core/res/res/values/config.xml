@@ -110,7 +110,7 @@
     <bool name="config_enableMultiUserUI">true</bool>
 
     <!--  Maximum number of supported users -->
-    <integer name="config_multiuserMaximumUsers">4</integer>
+    <integer name="config_multiuserMaximumUsers">16</integer>
 
     <!-- Default supported concurrent socket keepalive slots per transport type, used by
          ConnectivityManager.createSocketKeepalive() for calculating the number of keepalive
