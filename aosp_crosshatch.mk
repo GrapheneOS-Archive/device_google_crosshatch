@@ -14,6 +14,11 @@
 # limitations under the License.
 #
 
+# PRODUCT_COPY_FILES retains the first dest match, so this must appear
+# before mainline.mk to override device/sample/etc/apns-full-conf.xml.
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/apns-full-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
+
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/mainline.mk)
