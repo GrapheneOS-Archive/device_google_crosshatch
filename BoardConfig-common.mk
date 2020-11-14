@@ -81,11 +81,6 @@ AB_OTA_PARTITIONS += \
     system_ext
 endif
 
-ifneq ($(filter %_mainline,$(TARGET_PRODUCT)),)
-AB_OTA_PARTITIONS += \
-    vbmeta_system
-endif
-
 # Partitions (listed in the file) to be wiped under recovery.
 TARGET_RECOVERY_WIPE := device/google/crosshatch/recovery.wipe
 ifneq ($(filter %_mainline,$(TARGET_PRODUCT)),)
@@ -97,14 +92,6 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_RECOVERY_UI_LIB := \
     librecovery_ui_pixel \
     libfstab
-
-ifneq ($(filter %_mainline,$(TARGET_PRODUCT)),)
-BOARD_AVB_VBMETA_SYSTEM := system system_ext product
-BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
-BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA2048
-BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
-BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
-endif
 
 # product.img
 ifneq ($(PRODUCT_NO_PRODUCT_PARTITION), true)
