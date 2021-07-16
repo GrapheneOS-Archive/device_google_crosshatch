@@ -55,5 +55,5 @@ PRODUCT_PACKAGES += com.android.vndk.current.on_vendor
 PRODUCT_MANUFACTURER := Google
 PRODUCT_NAME := aosp_blueline
 PRODUCT_DEVICE := blueline
-PRODUCT_BRAND := Android
+PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 3
