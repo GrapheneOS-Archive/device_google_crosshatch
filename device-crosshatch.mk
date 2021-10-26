@@ -44,8 +44,7 @@ PRODUCT_COPY_FILES += \
     device/google/crosshatch/nfc/libnfc-nxp.crosshatch.ese.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-G013D.conf
 
 PRODUCT_PACKAGES += \
-    NoCutoutOverlay \
-    AvoidAppsInCutoutOverlay
+    NoCutoutOverlay
 
 # Enable iorapd prefetching by default for crosshatch targets
 PRODUCT_PRODUCT_PROPERTIES += \
