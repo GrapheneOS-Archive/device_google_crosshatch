@@ -65,7 +65,9 @@ AB_OTA_UPDATER := true
 
 AB_OTA_PARTITIONS += \
     system \
-    dtbo
+    dtbo \
+    msadp \
+    apdp
 
 ifneq ($(PRODUCT_BUILD_BOOT_IMAGE),false)
 AB_OTA_PARTITIONS += boot
