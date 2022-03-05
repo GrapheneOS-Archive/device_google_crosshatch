@@ -134,3 +134,8 @@ AB_OTA_POSTINSTALL_CONFIG += \
 # Set thermal warm reset
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.thermal_warmreset = true \
+
+# RCS packages (com.android.service.ims.presence and com.android.service.ims)
+PRODUCT_PACKAGES += \
+    PresencePolling \
+    RcsService
