@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 
-PRODUCT_SOONG_NAMESPACES += vendor/google_devices/crosshatch
 
 # avoid using generic aosp_product.mk libnfc-nci.conf
 PRODUCT_COPY_FILES += \
