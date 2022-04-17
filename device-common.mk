@@ -144,5 +144,5 @@ PRODUCT_PACKAGES += \
     RcsService
 
 PRODUCT_PACKAGES += \
-    extracted-carrierconfig \
-    extracted-apns
+    extracted-carrierconfig-apv \
+    extracted-apns-apv
