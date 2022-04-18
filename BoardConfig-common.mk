@@ -282,3 +282,7 @@ TARGET_USES_MKE2FS := true
 # Testing related defines
 BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/b1c1-setup.sh
 -include vendor/google_devices/crosshatch/proprietary/BoardConfigVendor.mk
+
+SOONG_CONFIG_NAMESPACES += carriers-apv
+SOONG_CONFIG_carriers-apv += apv
+SOONG_CONFIG_carriers-apv_apv:= true
